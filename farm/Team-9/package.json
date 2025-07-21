@@ -1,0 +1,27 @@
+{
+  "name": "team-9-cml-livelihood-tracker",
+  "version": "1.0.0",
+  "description": "CML Livelihood Tracker - A comprehensive system for managing farmer data and agricultural projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend/frontendapp && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend/frontendapp && npm install",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [
+    "agriculture",
+    "farmer-management",
+    "livelihood-tracker",
+    "cml",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Team 9",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
